@@ -18,11 +18,11 @@ const Menu = () => {
             </DropdownToggle>
 
             <DropdownMenu>
-                <DropdownItem>Masculino</DropdownItem>
+                <DropdownItem className='item'>Masculino</DropdownItem>
                 <DropdownItem divider></DropdownItem>
-                <DropdownItem>Femenino</DropdownItem>
+                <DropdownItem className='item'>Femenino</DropdownItem>
                 <DropdownItem divider></DropdownItem>
-                <DropdownItem>Infantil</DropdownItem>
+                <DropdownItem className='item'>Infantil</DropdownItem>
             </DropdownMenu>
         </Dropdown>
             

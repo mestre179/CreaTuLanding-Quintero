@@ -1,4 +1,4 @@
-import Virtgold from './logo.png'
+import Virtgold from '../../../src/assets/logo.png'
 import './NavBar.css'
 
 

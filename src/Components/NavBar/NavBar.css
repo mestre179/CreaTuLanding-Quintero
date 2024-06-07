@@ -30,3 +30,10 @@ body {
     background-color: black !important;
     color: white !important
 }
+
+.item:active {
+    background-color: black !important;
+    color: white !important;
+}
+
+
