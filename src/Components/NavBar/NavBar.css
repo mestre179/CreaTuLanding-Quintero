@@ -1,0 +1,32 @@
+
+body {
+    margin: 0;
+}
+.navbar {
+    background-color: #f1d566;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:  100px;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-shadow: 0 2px 3px rgb(0,0,0,0.1);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 0 20px
+}
+
+.drop {
+    background-color: transparent !important;
+    color: black !important ;
+    font-size: large !important;
+    
+}
+
+.drop:hover {
+    background-color: black !important;
+    color: white !important
+}

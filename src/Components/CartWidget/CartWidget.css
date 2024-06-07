@@ -1,0 +1,23 @@
+.car {
+    padding-right: 20px;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+}
+
+.bubble { 
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+
+.bubbleAlert {
+        background-color: red;
+        border-radius: 15px;
+        color: #fff;
+        padding: 2px 10px;
+        font-size: 0.9rem;
+        width: 20px;
+}
