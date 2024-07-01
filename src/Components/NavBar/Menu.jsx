@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import {Dropdown, DropdownItem, DropdownMenu, DropdownToggle} from 'reactstrap'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Menu = () => {  
@@ -18,11 +19,21 @@ const Menu = () => {
             </DropdownToggle>
 
             <DropdownMenu>
-                <DropdownItem className='item'>Masculino</DropdownItem>
+                <DropdownItem className='item'>
+                    <Link to='/categorias/Remeras'>Remeras</Link>
+                </DropdownItem>
                 <DropdownItem divider></DropdownItem>
-                <DropdownItem className='item'>Femenino</DropdownItem>
+                <DropdownItem className='item'>
+                    <Link to='/categorias/Buzos'>Buzos</Link>
+                </DropdownItem>
                 <DropdownItem divider></DropdownItem>
-                <DropdownItem className='item'>Infantil</DropdownItem>
+                <DropdownItem className='item'>
+                    <Link to='/categorias/Pijamas'>Pijamas</Link>
+                </DropdownItem>
+                <DropdownItem divider></DropdownItem>
+                <DropdownItem className='item'>
+                    <Link to='/categorias/Zapatillas'>Zapatillas</Link>
+                </DropdownItem>
             </DropdownMenu>
         </Dropdown>
             

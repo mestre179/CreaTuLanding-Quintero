@@ -21,3 +21,37 @@
         font-size: 0.9rem;
         width: 20px;
 }
+
+.detallesCarro {
+    background-color: #fff;
+    position: absolute;
+    margin-top: 30px;
+    box-shadow: 1px 5px 5px rgb(0,0,0,0.3);
+    border-radius: 5px;
+    width: 300px;
+    right: 50px;
+    z-index: 1;
+    font-size: large;
+}
+
+ul {
+    margin: 0;
+    padding: 0
+}
+
+.producto {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    border-bottom: solid 1px #aaa;
+}
+
+.checkout {
+    width: 100%;
+    font-size: xx-large;
+    background-color: lightgray;
+    display: block;
+    
+}
