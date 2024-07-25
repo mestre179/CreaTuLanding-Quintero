@@ -64,7 +64,13 @@ const getOrder = async () => {
       return
   }
   if(cart.length === 0) {
-      console.log('el carrito está vacío')
+    Swal.fire({
+        position: "center",
+        icon: "error",
+        title: `El Carrito esta vacio`,
+        showConfirmButton: false,
+        timer: 1500
+      })
       return
   }
 

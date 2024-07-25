@@ -1,5 +1,4 @@
-import React, { useContext, useState } from 'react'
-import { CartContext } from '../Components/CartWidget/CartWidgetContext'
+import React, { useState } from 'react'
 
 const useCounter = (initialValue, stock) => {
     const [ count, setCount ] = useState(initialValue)

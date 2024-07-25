@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 
 
 const AgregarAlCarro = ({id, nombre, img, precio, count, stock}) => {
-    const [ cart, setCart, stocks, setStocks ] = useContext(CartContext); 
+    const [ cart, setCart ] = useContext(CartContext); 
 
 
     const agregar = () => {
