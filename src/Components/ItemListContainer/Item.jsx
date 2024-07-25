@@ -1,27 +1,36 @@
-import React, { useContext } from "react";
 import Card from 'react-bootstrap/Card';
 import { Link } from "react-router-dom";
-import ItemCount from "./ItemCount";
+import { Button } from 'react-bootstrap';
 
 
-const Item = ({id, nombre, descripcion, img, precio, stock}) => {
-         
+
+
+const Item = ({id, nombre, img, i}) => {
+        
+    if (i %2 === 0) {
     return (      
-        <Card style={{ width: '305px', margin: '10px'}}>
-          <Card.Img style={{ width: '301px', height: '350px'}} variant="top" src={img} />
-          <Card />
-          <Card.Body>
-            <Card.Title className="text-center">{nombre}</Card.Title>
-            <Card.Text>
-              <Link to={`/producto/${id}`}>Ver Detalles</ Link>
-            </Card.Text>
-            <Card.Title>
-                {precio}
-            </Card.Title>
-            <ItemCount id={id} nombre={nombre} img={img} precio={precio} initialValue={1} stock={stock}></ItemCount>
+        <Card className= ".item-card-container" style={{ backgroundColor: '#f1d566', height: '300px', margin: '10px'}}>
+          
+          <Card.Body style={{ height: '90%', margin: '10px', padding: '25px'}}>
+          <Card.Img style={{ width: '350px', height: '120px'}} variant="top" src={img} />
+          <Card.Title></Card.Title>
+            <Button style={{ marginLeft: '120px', marginTop: '30px'}} variant="primary" className='boton-detalle2'><Link to={`/producto/${id}`} style={{ textDecoration: 'none'}}>Comprar</ Link></Button> 
           </Card.Body>
+          
         </Card>
-      );
+      )} else {
+        return (      
+          <Card className= ".item-card-container" style={{ backgroundColor: '#0a172d', height: '300px', margin: '10px'}}>
+            
+            <Card.Body style={{ height: '90%', margin: '10px', padding: '25px'}}>
+            <Card.Img style={{ width: '350px', height: '120px'}} variant="top" src={img} />
+            <Card.Title></Card.Title>
+              <Button style={{ marginLeft: '120px', marginTop: '30px'}} variant="primary" className='boton-detalle'><Link to={`/producto/${id}`} style={{ textDecoration: 'none'}}>Comprar</ Link></Button> 
+            </Card.Body>
+            
+          </Card>
+        )
+      };
 }
 
 export default Item

@@ -1,7 +1,10 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom'
 
+
 export default function DetallesCarro({carro}) {
+  
+
   return (
     <div className='detallesCarro'>
         <ul>    
@@ -12,7 +15,7 @@ export default function DetallesCarro({carro}) {
                 </li>
             )}
         </ul>
-        <Link to='/cart'>{carro.length ? <button className='producto checkout'><b>Checkout</b></button> : null}</Link>
+                <Link to='/cart'>{carro.length ? <button className='producto checkout'><b>Checkout</b></button> : null}</Link>
     </div>
   )
 }

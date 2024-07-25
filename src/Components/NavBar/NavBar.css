@@ -11,6 +11,9 @@ body {
     justify-content: space-between;
     padding: 0 50px;
     box-shadow: 0 2px 3px rgb(0,0,0,0.1);
+    position: sticky !important; 
+    top: 0;
+    z-index: 1;
 }
 
 .logo {

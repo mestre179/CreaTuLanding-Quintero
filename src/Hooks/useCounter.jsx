@@ -1,11 +1,16 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { CartContext } from '../Components/CartWidget/CartWidgetContext'
 
 const useCounter = (initialValue, stock) => {
     const [ count, setCount ] = useState(initialValue)
     
-
+         
     const incrementar = () => {
-        count < stock && setCount(count + 1)
+        if (stock <= 10) {
+       count < stock && setCount(count + 1)
+        } else {
+            count < 10 && setCount(count + 1) 
+        }
     }
     const decrementar = () => {
         count > initialValue && setCount(count - 1)

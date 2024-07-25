@@ -20,20 +20,17 @@ const Menu = () => {
 
             <DropdownMenu>
                 <DropdownItem className='item'>
-                    <Link to='/categorias/Remeras'>Remeras</Link>
+                    <Link to='/categorias/World of Warcraft'>World of Warcraft</Link>
                 </DropdownItem>
                 <DropdownItem divider></DropdownItem>
                 <DropdownItem className='item'>
-                    <Link to='/categorias/Buzos'>Buzos</Link>
+                    <Link to='/categorias/Runescape'>Runescape</Link>
                 </DropdownItem>
                 <DropdownItem divider></DropdownItem>
                 <DropdownItem className='item'>
-                    <Link to='/categorias/Pijamas'>Pijamas</Link>
+                    <Link to='/categorias/Albion'>Albion</Link>
                 </DropdownItem>
-                <DropdownItem divider></DropdownItem>
-                <DropdownItem className='item'>
-                    <Link to='/categorias/Zapatillas'>Zapatillas</Link>
-                </DropdownItem>
+           
             </DropdownMenu>
         </Dropdown>
             
