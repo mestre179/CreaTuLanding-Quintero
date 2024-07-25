@@ -11,6 +11,7 @@ import { NoStock } from "./NoStock";
 
 
 
+
 const ItemListDetails = () => {
     
     const [ productos, setProductos] = useState({})
@@ -19,7 +20,7 @@ const ItemListDetails = () => {
     const navigate = useNavigate()
     const [ cart ] = useContext(CartContext)
     
-
+    
     useEffect(() => {
       setLoading(true)
         const getDataById = async () => {
@@ -46,8 +47,8 @@ const ItemListDetails = () => {
     } 
 
     const cantidad = cantidadByID(productos.id)
-
-         
+    
+    
      return (
       <> {
         loading ? <Oval wrapperClass='item-list-loader' /> :
@@ -60,7 +61,7 @@ const ItemListDetails = () => {
               {productos.descripcion}
             </Card.Text>
             <Card.Title>
-                {productos.precio}$
+                {productos.precio}$ por unidad
             </Card.Title>{
               cantidad === productos.stock ? <NoStock></NoStock>: <ItemCount id={productos.id} nombre={productos.nombre} img={productos.img} precio={productos.precio} initialValue={1} stock={productos.stock}></ItemCount>
             }
